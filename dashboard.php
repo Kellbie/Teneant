@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
 </head>
 <style>
+.headpart{
+    background-color: #1f3f94;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.firstp{
+    color: white;
+     margin-left:48%;
+      font-size:20px;
+    }
+
 * {
     margin: 0;
 }
@@ -111,6 +124,45 @@ body {
     color: rgb(255, 255, 255);
 }
 
+@media only screen and (max-width: 1280px) {
+    .dropbtn{
+        width: 260%;
+        margin-left: -25%;
+    }
+
+    .top-image{
+        margin-left: 12%;
+    }
+
+    .firstp{
+        margin-left:25%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .dropbtn{
+        width: 200%;
+        margin-left: -20%;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    #leftbox{
+        width: 50%;
+    }
+
+    .top-image{
+        margin-left: 0%;
+    }
+
+    .headpart{
+        width: 100%;
+    }
+
+}
+
 /* Drop down end */
 </style>
 
@@ -136,10 +188,10 @@ body {
 
 
 
-    <header style="background-color: #1f3f94; padding-top: 2%; padding-bottom: 2%;">
+    <header style="" class="headpart">
         <h1 style="color: white; margin-left:10%; margin-left:25%;">Hello <?php echo $_POST['First-Name']; ?>
         </h1>
-        <p style="color: white; margin-left:48%; font-size:20px;">Got a project or task? Click on the create
+        <p class="firstp">Got a project or task? Click on the create
             task
             to select your project type.</p>
     </header>

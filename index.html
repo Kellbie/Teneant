@@ -27,18 +27,19 @@
 
 
     <script type="text/javascript">
-      function sendData(event) {
-  event.preventDefault(); // prevent the form from submitting normally
+      const form = document.querySelector('form');
+   form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/property-management.php');
+      xhr.send(formData);
+      xhr.open('POST', '/travel.html');
+      xhr.send(formData);
+      // add more pages as needed
+      window.location.href = 'dashboard.php';
+   });
 
-  // get the form data
-  const formData = new FormData(event.target);
-
-  // send the data to the first page
-  fetch('/dashboard.php', { method: 'POST', body: formData });
-
-  // send the data to the second page
-  fetch('/property-management.php', { method: 'POST', body: formData });
-}
     </script>
 
 
@@ -402,7 +403,7 @@
       <label class="form-label">Let's Start Here</label>
       <div class="inside-form">
 
-        <form id="myForm" onsubmit="submitForm(); return false;">
+        <form action="dashboard.php" method="post">
           
           <label class="title">First Name:</label><br />
           <input
