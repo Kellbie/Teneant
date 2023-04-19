@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="kean.jpg" />
+    <title>Other Projects</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: #f5f4f9;
+    }
+    #leftbox {
+      float: left;
+      background: #ffffff;
+      width: 20%;
+      height: 100vh;
+    }
+
+    .top-image {
+      height: 20%;
+      margin-left: 20%;
+    }
+
+    .First {
+      border: none;
+      outline: none;
+      background-color: #e7e7ff;
+      width: 105%;
+      border-radius: 10px;
+      height: 5vh;
+      margin-left: -10%;
+    }
+
+    .dropbtn {
+      border: none;
+      outline: none;
+      background-color: #e7e7ff;
+      width: 355%;
+      border-radius: 10px;
+      height: 5vh;
+      margin-left: -35%;
+      margin-top: 5%;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: #1f3f94;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Drop down end */
+
+    .form-label {
+      font-family: "Roboto", sans-serif;
+      margin-left: 2%;
+    }
+
+    .other-form {
+      padding-top: 3%;
+    }
+
+    .other-form-inputs {
+      height: 20%;
+      outline: none;
+      padding-top: 0.25%;
+      width: 25%;
+      padding-bottom: 0.25%;
+      margin-left: 2.5%;
+      border-radius: 0.5px;
+      border: grey;
+    }
+
+    .input-labels {
+      margin-top: 2%;
+    }
+  </style>
+  <body>
+    <div id="leftbox">
+      <img src="Kelltech.png" class="top-image" />
+      <ul>
+        <a href="dashboard.php"><button class="First">DashBoard</button></a>
+        <div class="dropdown">
+          <button
+            class="dropbtn"
+            style="background-color: #1f3f94; color: rgb(255, 255, 255);"
+          >
+            Create Task
+          </button>
+          <div class="dropdown-content">
+            <a href="property-management.php">Property Management</a>
+            <a href="#">Event Management</a>
+            <a href="#">Career Management</a>
+            <a href="#">Health Management</a>
+            <a href="travel.html">Vacation Plan Management</a>
+            <a
+              href="other-projects.html"
+              style="background-color: #1f3f94; color: rgb(255, 255, 255);"
+              >Other Projects</a
+            >
+          </div>
+        </div>
+      </ul>
+    </div>
+    <!-- End of Nav Bar -->
+
+    <header
+      style="background-color: #1f3f94; padding-top: 2%; padding-bottom: 2%; text-align: center;"
+    >
+      <h1 style="color: white;">Other Projects</h1>
+    </header>
+
+    <form class="other-form">
+      <div class="input-label">
+        <label class="form-label" id="project-name-text"
+          >Project Name<span style="color: red;"> *</span></label
+        >
+        <input type="text" class="other-form-inputs" />
+      </div>
+
+      <div class="input-labels">
+        <label class="form-label" id="project-name-text"
+          >Start Date<span style="color: red;"> *</span></label
+        >
+        <input
+          type="date"
+          class="other-form-inputs"
+          style="margin-left: 4%; width: 25.5%;"
+        />
+      </div>
+
+      <div class="input-labels" style="margin-left: 60%; margin-top: -1.7%;">
+        <label class="form-label" id="project-name-text"
+          >End Date<span style="color: red;"> *</span></label
+        >
+        <input
+          type="date"
+          class="other-form-inputs"
+          style="margin-left: 4%; width:57.5%; padding-top: 0.6%; padding-bottom: 0.6%;"
+        />
+      </div>
+    </form>
+    <h1 style="text-align: left; margin-top: 2.5%;">Create Activity</h1>
+
+    <!-- adding start -->
+
+    <div id="formContainer" style="margin-top: 2%;">
+      <form id="form1">
+        <div class="activity-div-second">
+          <label style="margin-left: 6%;">Activity</label><br /><input
+            required
+            style="margin-left: 2%;"
+          />
+          <div style="margin-left: 33%; margin-top: -2.7%;">
+            <label style="margin-left: 5%; margin-bottom: -1px;" id="cost"
+              >Cost</label
+            ><br /><input
+              style="width: 13%; margin-top: .2%;"
+              required
+              class="cost-class"
+            />
+          </div>
+          <div style="margin-left: 38%; margin-top: -2.7%;">
+            <label style="margin-left: 10%;">Days Assigned</label><br /><input
+              style="width: 13%; margin-left: 8%; margin-top: .2%;"
+              type="number"
+              required
+              class="day-class"
+            />
+          </div>
+        </div>
+        <div style="margin-left: 52%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Set Reminder</option>
+            <option>Daily</option>
+            <option>Monthly</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option> </select
+          ><br /><br />
+        </div>
+
+        <div style="margin-left: 59%; margin-top: -2.55%;">
+          <input type="time" required />
+        </div>
+
+        <div style="margin-left: 65.5%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Status</option>
+            <option style="background-color: green;">Completed</option>
+            <option style="background-color: blue; color: #ffffff;"
+              >In Progress</option
+            >
+            <option style="background-color: yellow;">Uncompleted</option>
+            <option style="background-color: red; color: #ffffff;"
+              >Suspended</option
+            > </select
+          ><br /><br />
+        </div>
+      </form>
+      <button id="addButton1" onclick="test1()">Add</button>
+    </div>
+    <!-- adding end -->
+    <!-- adding two -->
+    <div
+      id="formContainer2"
+      style="margin-top: 2%; display: none;"
+      class="formcontainer"
+    >
+      <form id="form1">
+        <div class="activity-div-second">
+          <label style="margin-left: 6%;">Activity</label><br /><input
+            required
+            style="margin-left: 2%;"
+          />
+          <div style="margin-left: 33%; margin-top: -2.7%;">
+            <label style="margin-left: 5%; margin-bottom: -1px;" id="cost"
+              >Cost</label
+            ><br /><input
+              style="width: 13%; margin-top: .2%;"
+              required
+              class="cost-class"
+            />
+          </div>
+          <div style="margin-left: 38%; margin-top: -2.7%;">
+            <label style="margin-left: 10%;">Days Assigned</label><br /><input
+              style="width: 13%; margin-left: 8%; margin-top: .2%;"
+              type="number"
+              required
+              class="day-class"
+            />
+          </div>
+        </div>
+        <div style="margin-left: 52%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Set Reminder</option>
+            <option>Daily</option>
+            <option>Monthly</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option> </select
+          ><br /><br />
+        </div>
+
+        <div style="margin-left: 59%; margin-top: -2.55%;">
+          <input type="time" required />
+        </div>
+
+        <div style="margin-left: 65.5%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Status</option>
+            <option style="background-color: green;">Completed</option>
+            <option style="background-color: blue; color: #ffffff;"
+              >In Progress</option
+            >
+            <option style="background-color: yellow;">Uncompleted</option>
+            <option style="background-color: red; color: #ffffff;"
+              >Suspended</option
+            > </select
+          ><br /><br />
+        </div>
+      </form>
+      <button id="addButton2" onclick="test2()">Add</button>
+    </div>
+    <!-- adding two end -->
+    <!-- adding three -->
+    <div
+      id="formContainer3"
+      style="margin-top: 2%; display: none;"
+      class="formcontainer3"
+    >
+      <form id="form1">
+        <div class="activity-div-second">
+          <label style="margin-left: 6%;">Activity</label><br /><input
+            required
+            style="margin-left: 2%;"
+          />
+          <div style="margin-left: 33%; margin-top: -2.7%;">
+            <label style="margin-left: 5%; margin-bottom: -1px;" id="cost"
+              >Cost</label
+            ><br /><input
+              style="width: 13%; margin-top: .2%;"
+              required
+              class="cost-class"
+            />
+          </div>
+          <div style="margin-left: 38%; margin-top: -2.7%;">
+            <label style="margin-left: 10%;">Days Assigned</label><br /><input
+              style="width: 13%; margin-left: 8%; margin-top: .2%;"
+              type="number"
+              required
+              class="day-class"
+            />
+          </div>
+        </div>
+        <div style="margin-left: 52%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Set Reminder</option>
+            <option>Daily</option>
+            <option>Monthly</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option> </select
+          ><br /><br />
+        </div>
+
+        <div style="margin-left: 59%; margin-top: -2.55%;">
+          <input type="time" required />
+        </div>
+
+        <div style="margin-left: 65.5%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Status</option>
+            <option style="background-color: green;">Completed</option>
+            <option style="background-color: blue; color: #ffffff;"
+              >In Progress</option
+            >
+            <option style="background-color: yellow;">Uncompleted</option>
+            <option style="background-color: red; color: #ffffff;"
+              >Suspended</option
+            > </select
+          ><br /><br />
+        </div>
+      </form>
+      <button id="addButton3" onclick="test3()">Add</button>
+    </div>
+    <!-- adding three end -->
+    <!-- adding four -->
+    <div
+      id="formContainer4"
+      style="margin-top: 2%; display: none;"
+      class="formcontainer4"
+    >
+      <form id="form1">
+        <div class="activity-div-second">
+          <label style="margin-left: 6%;">Activity</label><br /><input
+            required
+            style="margin-left: 2%;"
+          />
+          <div style="margin-left: 33%; margin-top: -2.7%;">
+            <label style="margin-left: 5%; margin-bottom: -1px;" id="cost"
+              >Cost</label
+            ><br /><input
+              style="width: 13%; margin-top: .2%;"
+              required
+              class="cost-class"
+            />
+          </div>
+          <div style="margin-left: 38%; margin-top: -2.7%;">
+            <label style="margin-left: 10%;">Days Assigned</label><br /><input
+              style="width: 13%; margin-left: 8%; margin-top: .2%;"
+              type="number"
+              required
+              class="day-class"
+            />
+          </div>
+        </div>
+        <div style="margin-left: 52%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Set Reminder</option>
+            <option>Daily</option>
+            <option>Monthly</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option> </select
+          ><br /><br />
+        </div>
+
+        <div style="margin-left: 59%; margin-top: -2.55%;">
+          <input type="time" required />
+        </div>
+
+        <div style="margin-left: 65.5%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Status</option>
+            <option style="background-color: green;">Completed</option>
+            <option style="background-color: blue; color: #ffffff;"
+              >In Progress</option
+            >
+            <option style="background-color: yellow;">Uncompleted</option>
+            <option style="background-color: red; color: #ffffff;"
+              >Suspended</option
+            > </select
+          ><br /><br />
+        </div>
+      </form>
+      <button id="addButton4" onclick="test5()">Add</button>
+    </div>
+    <!-- adding four end -->
+    <!-- adding five -->
+    <div
+      id="formContainer5"
+      style="margin-top: 2%; display: none;"
+      class="formcontainer5"
+    >
+      <form id="form1">
+        <div class="activity-div-second">
+          <label style="margin-left: 6%;">Activity</label><br /><input
+            required
+            style="margin-left: 2%;"
+          />
+          <div style="margin-left: 33%; margin-top: -2.7%;">
+            <label style="margin-left: 5%; margin-bottom: -1px;" id="cost"
+              >Cost</label
+            ><br /><input
+              style="width: 13%; margin-top: .2%;"
+              required
+              class="cost-class"
+            />
+          </div>
+          <div style="margin-left: 38%; margin-top: -2.7%;">
+            <label style="margin-left: 10%;">Days Assigned</label><br /><input
+              style="width: 13%; margin-left: 8%; margin-top: .2%;"
+              type="number"
+              required
+              class="day-class"
+            />
+          </div>
+        </div>
+        <div style="margin-left: 52%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Set Reminder</option>
+            <option>Daily</option>
+            <option>Monthly</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option> </select
+          ><br /><br />
+        </div>
+
+        <div style="margin-left: 59%; margin-top: -2.55%;">
+          <input type="time" required />
+        </div>
+
+        <div style="margin-left: 65.5%; margin-top: -1.3%;">
+          <select name="reminder-dates" id="select" required>
+            <option selected hidden>Status</option>
+            <option style="background-color: green;">Completed</option>
+            <option style="background-color: blue; color: #ffffff;"
+              >In Progress</option
+            >
+            <option style="background-color: yellow;">Uncompleted</option>
+            <option style="background-color: red; color: #ffffff;"
+              >Suspended</option
+            > </select
+          ><br /><br />
+        </div>
+      </form>
+      <button id="addButton5">End</button>
+    </div>
+    <!-- adding five end -->
+    <div style="margin-top: 2%;">
+      <label class="form-label">Total Cost: </label>
+      <p id="result" style=" display: inline;"></p>
+    </div>
+
+    <div style="margin-top: 2%;">
+      <label class="form-label">Total Days: </label>
+      <p id="resultd" style=" display: inline;"></p>
+    </div>
+  </body>
+
+  <script>
+    function test1() {
+      var button1 = document.getElementById("addButton1");
+      var body2 = document.getElementById("formContainer2");
+      body2.style.display = "block";
+      button1.style.display = "none";
+    }
+
+    function test2() {
+      var button2 = document.getElementById("addButton2");
+      var body3 = document.getElementById("formContainer3");
+      body3.style.display = "block";
+      button2.style.display = "none";
+    }
+
+    function test3() {
+      var button3 = document.getElementById("addButton3");
+      var body4 = document.getElementById("formContainer4");
+      body4.style.display = "block";
+      button3.style.display = "none";
+    }
+
+    function test5() {
+      var button4 = document.getElementById("addButton4");
+      var body5 = document.getElementById("formContainer5");
+      body5.style.display = "block";
+      button4.style.display = "none";
+    }
+    // Adding End
+
+    const inputs = document.querySelectorAll(".cost-class");
+    const result = document.querySelector("#result");
+
+    inputs.forEach((input) => {
+      input.addEventListener("input", calculate);
+    });
+
+    function calculate() {
+      let total = 0;
+      inputs.forEach((input) => {
+        const value = parseFloat(input.value) || 0;
+        total += value;
+      });
+      result.textContent = total;
+    }
+
+    // cost end
+
+    const inputsd = document.querySelectorAll(".day-class");
+    const resultd = document.querySelector("#resultd");
+
+    inputsd.forEach((input) => {
+      input.addEventListener("input", calculate2);
+    });
+
+    function calculate2() {
+      let totald = 0;
+      inputsd.forEach((input) => {
+        const value = parseFloat(input.value) || 0;
+        totald += value;
+      });
+      resultd.textContent = totald;
+    }
+
+    // document.getElementById("addButton").addEventListener("click", function() {
+    //   let formContainer = document.getElementById("formContainer");
+    //   let form1 = document.getElementById("form1");
+    //   let newForm = form1.cloneNode(true);
+    //   newForm.id = "form" + (formContainer.childNodes.length + 1);
+    //   formContainer.appendChild(newForm);
+    // });
+  </script>
+</html>

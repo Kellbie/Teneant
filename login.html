@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login-Site</title>
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+    position: inherit;
+    background-size: cover;
+    background-color: black;
+}
+
+.company-logo {
+    height: 20vh;
+    width: 10vw;
+    margin-right: 2%;
+}
+
+.company-name {
+    margin-left: 14%;
+    margin-top: -10.5%;
+    font-family: sans-serif;
+    word-spacing: 10%;
+    color: #ffffff;
+}
+
+.company-detail-division {
+    margin-left: 40%;
+    padding-bottom: 1%;
+}
+
+.first-text-division {
+    margin-left: 3%;
+    color: #ffffff;
+}
+
+.first-text {
+    margin-left: 35%;
+}
+
+.first-text-under {
+    margin-left: 12%;
+}
+
+.form-division {
+    background-color: #7c1de9;
+    margin-left: 25%;
+    width: 50%;
+    padding-top: 5%;
+    border-radius: 10px;
+}
+
+.form-label {
+    font-size: 200%;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 35%;
+    color: rgb(255, 255, 255);
+}
+
+.inside-form {
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.title {
+    font-size: 150%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+#input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.second-form-division {
+    margin-left: 50%;
+    margin-top: -13%;
+}
+
+.last-name-input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.phone-number-input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.country-input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 2.8%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.form-button {
+    margin-left: 35%;
+    background-color: white;
+    border: black;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 13%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 375px) {
+    .company-logo {
+        height: 20vh;
+        width: 50vw;
+        margin-left: -80%;
+    }
+
+    .company-name {
+        margin-left: 5%;
+        margin-top: -50%;
+        font-family: sans-serif;
+        word-spacing: 10%;
+    }
+
+    .first-text {
+        margin-left: 1%;
+    }
+
+    .form-division {
+        background-color: #7c1de9;
+        margin-left: 5%;
+        width: 90%;
+        padding-top: 5%;
+        border-radius: 10px;
+    }
+
+    .form-label {
+        font-size: 200%;
+        font-family: "Quicksand", sans-serif;
+        padding-left: 15%;
+        color: rgb(255, 255, 255);
+    }
+
+    .title {
+        font-size: 150%;
+        padding-bottom: 10%;
+        color: white;
+    }
+
+    .second-form-division {
+        margin-left: 50%;
+        margin-top: -22%;
+    }
+
+    .number-text {
+        display: none;
+    }
+
+    .address-text {
+        display: none;
+    }
+
+    .form-button {
+        margin-left: 28%;
+        background-color: white;
+        border: black;
+        outline: none;
+        border-radius: 5px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 13%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .company-logo {
+        height: 25vh;
+        width: 50vw;
+        margin-left: -80%;
+    }
+
+    .company-name {
+        margin-left: 5%;
+        margin-top: -50%;
+        font-family: sans-serif;
+        word-spacing: 10%;
+        padding-bottom: 10%;
+    }
+
+    .first-text {
+        margin-left: 1%;
+    }
+
+    .form-division {
+        background-color: #7c1de9;
+        margin-left: 5%;
+        width: 90%;
+        padding-top: 5%;
+        border-radius: 10px;
+    }
+
+    .form-label {
+        font-size: 200%;
+        font-family: "Quicksand", sans-serif;
+        padding-left: 15%;
+        color: rgb(255, 255, 255);
+    }
+
+    .title {
+        font-size: 150%;
+        padding-bottom: 10%;
+        color: white;
+    }
+
+    .second-form-division {
+        margin-left: 50%;
+        margin-top: -22%;
+    }
+
+    .number-text {
+        display: none;
+    }
+
+    .address-text {
+        display: none;
+    }
+
+    .form-button {
+        margin-left: 28%;
+        background-color: white;
+        border: black;
+        outline: none;
+        border-radius: 5px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 13%;
+        margin-top: 10%;
+    }
+}
+</style>
+
+<body>
+    <div class="company-detail-division">
+        <img src="kean-remove.png" class="company-logo" />
+        <h1 class="company-name" style="margin-left: 20%">K e l l . C o</h1>
+    </div>
+    <div class="first-text-division">
+        <p class="first-text">
+            I am a value additions expert. Project or Task, What do you want to
+            organize
+        </p>
+    </div>
+
+    <div class="form-division">
+        <label class="form-label" style="font-size: 60px;">Log In</label>
+        <div class="inside-form">
+
+
+
+
+            <form id="myForm" action="loginprocess.php" method="post">
+
+                <label class=" title">Email <span class="address-text">Address:</span></label><br />
+                    <input type="email" required  name="Email" class="email-input" id="input"><br />
+
+
+                <div class="second-form-division">
+                    <label class="title">Password</span>:</label><br />
+                    <input type="password" required name="Phone-Number" class="phone-number-input" /><img src="eyeno.png" style="display: block; width: 14%; margin-top: -14%; margin-left: 82%;">  <br />
+                </div>
+                <button type="submit" class="form-button" style="margin-left: 33%;">Submit</button>
+                <div style="margin-left: 70% ; margin-top: -10%; padding-bottom: 10%;" >
+               <label>
+                <input type="checkbox" name="remember_me">
+                    Remember Me
+                </label>
+                </div> 
+                <p style="display: block; color: #ffffff; margin-top: -13%; padding-bottom: 15%;">Don't have an account? <a href="Index.html" style="color: white">Sign Up</a></p>
+                
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+
+</html>
